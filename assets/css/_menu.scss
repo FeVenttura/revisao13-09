@@ -1,0 +1,15 @@
+ul.menu{
+    list-style: none; // não quero bolinhas a esquerda
+    padding: 0;
+    margin: 0;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 50px;
+}
