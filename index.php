@@ -1,4 +1,5 @@
 <?php
+$titulo = "Página inicial";
 include __DIR__ . "/header.php";
 ?>
 <main>
@@ -24,9 +25,10 @@ include __DIR__ . "/header.php";
                 $sql = "SELECT * FROM noticias";
                 $resultado = $pdo->query($sql);
                 while ($row = $resultado->fetch(PDO::FETCH_ASSOC)) {
-                    //echo "<h1>" . $row['id_not'] . "</h1>";
+                    // echo "<h1>" . $row['id_not'] . "</h1>";
                     echo "<h1>" . $row['titulo'] . "</h1>";
                     echo "<p>" . $row['descricao'] . "</p>";
+                    
                 }
 
                 ?>
