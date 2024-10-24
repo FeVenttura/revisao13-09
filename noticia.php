@@ -4,9 +4,10 @@ $titulo = "Notícia";
 
 // Inclui o arquivo 'header.php'
 include "header.php";
+include_once __DIR__ . "/config/media.php";
 ?>
 
-<main>
+<main class="container">
     <?php
     // Inclui o arquivo de configuração de banco de dados 'db.php', que configura a conexão com o banco de dados.
     include __DIR__ . "/config/db.php";
@@ -31,6 +32,13 @@ include "header.php";
 
     // Se o resultado existir, exibe o título e a descrição da notícia
     if ($resultado) {
+
+        $img = BASE_UPLOAD_URL .  $resultado['imagem'];
+
+        echo "<div class='efeito-img' style='background: url(" . $img . ") center; background-size: cover;' >";
+        echo "<img src='" .  $img . "' style='opacity:0'>";
+        echo "</div>";
+
         // Exibe o título da notícia dentro de uma tag <h1>
         echo '<h1>';
         echo $resultado['titulo'];
@@ -48,4 +56,3 @@ include "header.php";
 // Inclui o arquivo 'footer.php'
 include "footer.php";
 ?>
-    $idNot = $_FG

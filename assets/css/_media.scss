@@ -1,0 +1,17 @@
+.thumb {
+    max-width: 100px;
+}
+
+.efeito-img {
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, rgba(227,145,11,0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,0.5) 100%);
+
+    }
+}

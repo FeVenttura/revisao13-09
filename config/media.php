@@ -9,7 +9,7 @@ define("ALLOWED_FILE_TYPES", [
 ]);
 define("MAX_FILE_SIZE", 1024*1024*5);
 
-define("BASE_UPLOAD_URL", "http://localhost/revisao13-09/dashboard/uploads")
+define("BASE_UPLOAD_URL", "http://localhost/revisao13-09/uploads/")
 
 
 ?>
